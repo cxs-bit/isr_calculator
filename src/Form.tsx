@@ -196,6 +196,7 @@ const Form = () => {
               id="salaryType"
               value={salaryType}
               defaultValue="2"
+              colorPalette="teal"
               onValueChange={(details) => setSalaryType(details.value ?? "2")}
             >
               <HStack flex="1" gap={6}>

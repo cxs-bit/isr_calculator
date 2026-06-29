@@ -107,7 +107,7 @@ const Form = () => {
                                         React.createElement(Field.RequiredIndicator, null)),
                                     React.createElement(Input, { id: "income", type: "number", value: income, onChange: (e) => setIncome(e.target.value), variant: "subtle", size: "lg", placeholder: "Ej. 15000..." })))))),
                 React.createElement(HStack, { w: "full", justifyContent: "space-between" },
-                    React.createElement(RadioGroup.Root, { id: "salaryType", value: salaryType, defaultValue: "2", onValueChange: (details) => setSalaryType(details.value ?? "2") },
+                    React.createElement(RadioGroup.Root, { id: "salaryType", value: salaryType, defaultValue: "2", colorPalette: "teal", onValueChange: (details) => setSalaryType(details.value ?? "2") },
                         React.createElement(HStack, { flex: "1", gap: 6 },
                             React.createElement(RadioGroup.Item, { key: "1", value: "1" },
                                 React.createElement(RadioGroup.ItemHiddenInput, null),
