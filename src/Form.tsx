@@ -141,6 +141,9 @@ const Form = () => {
       p="20px"
       flex="1"
       minH="0"
+      maxH="100%"
+      overflowY="auto"
+      overflowX="hidden"
       backgroundColor="gray.800"
       borderWidth="1px"
       borderColor="gray.700"
@@ -149,7 +152,7 @@ const Form = () => {
     >
       <form onSubmit={handleSubmit} style={{ width: "100%" }}>
         <VStack w="full" gap={4}>
-          <HStack w="full">
+          <HStack w="full" flexWrap="wrap" gap={4}>
             <Fieldset.Root>
               <Fieldset.Content>
                 <HStack gap="6">
@@ -191,7 +194,12 @@ const Form = () => {
             </Fieldset.Root>
           </HStack>
 
-          <HStack w="full" justifyContent="space-between">
+          <HStack
+            w="full"
+            justifyContent="space-between"
+            flexWrap="wrap"
+            gap={4}
+          >
             <RadioGroup.Root
               id="salaryType"
               value={salaryType}

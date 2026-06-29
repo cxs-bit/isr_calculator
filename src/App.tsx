@@ -34,6 +34,7 @@ const Layout = () => {
             borderWidth="1px"
             borderColor={"gray.700"}
             spaceY={2}
+            overflow="hidden"
           >
             {/* Header */}
             <Stack
