@@ -24,9 +24,9 @@ const Layout = () => {
       <section id="#heading">
         <AbsoluteCenter>
           <Box
-            p={"25px"}
-            h="80vh"
-            w="80vw"
+            w={{ base: "95vw", md: "80vw" }}
+            h={{ base: "auto", md: "80vh" }}
+            p={{ base: "16px", md: "25px" }}
             display="flex"
             flexDir="column"
             backgroundColor="bg.muted"

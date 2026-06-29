@@ -235,7 +235,13 @@ const Form = () => {
           </HStack>
 
           {calculationResult && (
-            <Stack w="full" backgroundColor="gray.900" p={4} borderRadius="md">
+            <Stack
+              w="full"
+              backgroundColor="gray.900"
+              p={4}
+              borderRadius="md"
+              overflowX="auto"
+            >
               {renderCalculationsTable(calculationResult)}
             </Stack>
           )}

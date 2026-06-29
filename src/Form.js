@@ -120,7 +120,7 @@ const Form = () => {
                     React.createElement(Button, { type: "submit", colorPalette: "teal", size: "lg", w: "150px", variant: "solid" },
                         "Calcular",
                         React.createElement(BsCalculatorFill, { size: "lg", color: "white" }))),
-                calculationResult && (React.createElement(Stack, { w: "full", backgroundColor: "gray.900", p: 4, borderRadius: "md" }, renderCalculationsTable(calculationResult))),
+                calculationResult && (React.createElement(Stack, { w: "full", backgroundColor: "gray.900", p: 4, borderRadius: "md", overflowX: "auto" }, renderCalculationsTable(calculationResult))),
                 React.createElement(Stack, { backgroundColor: "gray.500", w: "full" })))));
 };
 export default Form;
